@@ -1,3 +1,7 @@
+window.addEventListener('beforeunload', function (e) {
+  e.preventDefault();
+  e.returnValue = '';
+});
 const sitename = window.location.hostname.split(".")[0];
 const googleAna = document.createElement("script");
 googleAna.async = true;

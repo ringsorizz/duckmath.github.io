@@ -1,3 +1,7 @@
+window.addEventListener('beforeunload', function (e) {
+  e.preventDefault();
+  e.returnValue = '';
+});
 const templatetopnav = document.createElement("template");
 
 templatetopnav.innerHTML = `
